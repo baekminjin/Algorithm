@@ -22,6 +22,20 @@
 
 <p>문자열 배열 <code>strlist</code>가 매개변수로 주어집니다. <code>strlist</code> 각 원소의 길이를 담은 배열을 return하도록 solution 함수를 완성해주세요.</p>
 
+### 문제 해설
+입력 배열: strlist = ["We", "are", "the", "world!"]
+
+배열 길이 계산:
+
+int x = strlist.length;
+x의 값은 4입니다 (문자열이 4개 있으므로).
+정수 배열 생성:
+
+int[] y = new int[x];
+이제 y 배열의 길이는 4로 설정됩니다. 초기 상태는 y = [0, 0, 0, 0]입니다.
+for 루프 시작:
+
+for(int i = 0; i < x; i++) 루프를 통해 각 문자열의 길이를 계산합니다.
 <hr>
 
 <h5>제한사항</h5>
@@ -66,21 +80,7 @@
 <li>["I", "Love", "Programmers."]의 각 원소의 길이인 [1, 4, 12]을 return합니다.</li>
 </ul>
 
-<hr>
-### 문제 해설
-입력 배열: strlist = ["We", "are", "the", "world!"]
 
-배열 길이 계산:
-
-int x = strlist.length;
-x의 값은 4입니다 (문자열이 4개 있으므로).
-정수 배열 생성:
-
-int[] y = new int[x];
-이제 y 배열의 길이는 4로 설정됩니다. 초기 상태는 y = [0, 0, 0, 0]입니다.
-for 루프 시작:
-
-for(int i = 0; i < x; i++) 루프를 통해 각 문자열의 길이를 계산합니다.
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
